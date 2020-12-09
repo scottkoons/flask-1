@@ -1,0 +1,26 @@
+body {
+      background-color: #ECEAE5;
+    }
+
+button {
+    margin-top: 20px;
+}
+
+.wrap {
+  width: 600px;
+  margin: 0 auto;
+  padding: 32px 48px 30px 48px;
+    border: 1px solid #EEE;
+}
+
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+.error-msg {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="center-align header">Currency Converter</h1>
+{% block error %}{% endblock %}
+<div class="z-depth-1 grey lighten-4 row wrap">
+    <form action="/convert" method="post">
+        <div class="form-group">
+            <label for="from-curr">Converting from </label>
+            <input class="form-control col-2" type="text" id="from-curr" name="from-curr" required minlength="3"
+                maxlength="3" size="10">
+        </div>
+        <div class="form-group">
+            <label for="to-curr">Converting to </label>
+            <input class="form-control col-2" type="text" id="to-curr" name="to-curr" required minlength="3"
+                maxlength="3" size="10">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount </label>
+            <input class="form-control col-2" type="text" id="amount" name="amount" required size="10">
+        </div>
+        <div>
+            <button class="col s12 btn btn-large waves-effect" type="submit" value="Convert">Convert</button>
+        </div>
+
+    </form>
+
+</div>
+
+
+
+{% endblock %}
